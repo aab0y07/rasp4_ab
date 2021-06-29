@@ -1,0 +1,61 @@
+--------------------Commands i need to run -------------------
+
+1. ~/kuksa-dias-ab/kuksa.val/kuksa_feeders/dbc2val $ 
+python3 dbcfeeder.py -d vcan0 -j ../../kuksa_certificates/jwt/super-admin.json.token --dbc dias_simple.dbc --mapping dias_mapping.yml --j1939^C
+
+
+2. To apply merged file $
+  
+canplayer -I mergedCAN.log 
+
+----------------cloud setup ---------------------
+
+"username" : "manager@t876637df59a34e389035a46099ae6fef",
+"password" : "WPQPBaonemyPoNz1L5AZ"
+
+
+-------------cloudfeeder.py------------------------
+auth-id: iot1
+password: superkuksaiot1
+
+
+Command to run cloud part: 
+*******************Keep in mind that kuksa-val server should have been running before starting the cloud ****************
+*******************In case token has expired, just renew token ****************
+python3 cloudfeeder.py -j ../../certificates/jwt/super-admin.json.token --host  mqtt.bosch-iot-hub.com -p 8883 -u iot1@t876637df59a34e389035a46099ae6fef -P superkuksaiot1 -c iothub.crt -t telemetry
+
+Command to run kuksa.val servver:
+./kuksa-val-server --vss modified.json --insecure --log-level ALL
+
+///dbcreader uses socketcan to read can signals  ////
+
+
+candump  allows you to print all data that is being received by a CAN interface.
+
+
+---------------------kuksa_dias_secoc----------------------------------------------
+
+"username" : "manager@t23dc7c7e760340cdaea5f60e38af23d9",
+"password" : "BcleE8vQEG9z4nIl1TTB"
+
+"tenant_id" : "t23dc7c7e760340cdaea5f60e38af23d9"
+
+"device-id": "kuksa-iot-secoc"
+auth-id: iot2
+password: superkuksaiot2
+
+
+
+
+
+
+
+_____________Commands used____________________________
+
+
+python3 cloudfeederMod.py -j ../kuksa_certificates/jwt/super-admin.json.token --host  mqtt.bosch-iot-hub.com -p 8883 -u pc01@t20babfe7fb2840119f69e692f184127d -P kuksatutisfun01 -c iothub.crt -t telemetry
+
+
+
+python3 cloudFeederSecOC.py --dbc dias_simple.dbc --host  mqtt.bosch-iot-hub.com -p 8883 -u iot2@t23dc7c7e760340cdaea5f60e38af23d9 -P superkuksaiot2 -c iothub.crt -t telemetry
+
