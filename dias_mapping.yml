@@ -1,0 +1,116 @@
+# Map OBD values to tree
+
+AmbientAirTemp:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.AmbientAirTemp
+
+Aftrtrtmnt1SCRCtlystIntkGasTemp:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.AfterTreatment.Aftrtrtmnt1SCRCtlystIntkGasTemp
+
+Aftrtratment1ExhaustGasMassFlow:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.AfterTreatment.Aftrtratment1ExhaustGasMassFlow
+
+Aftertreatment1IntakeNOx:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.AfterTreatment.NOxLevel.Aftertreatment1IntakeNOx
+
+Aftertreatment1OutletNOx:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.AfterTreatment.NOxLevel.Aftertreatment1OutletNOx
+
+TimeSinceEngineStart:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.Drivetrain.FuelSystem.TimeSinceEngineStart
+
+ActualEngPercentTorque:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.Drivetrain.InternalCombustionEngine.Engine.ActualEngPercentTorque
+
+EngReferenceTorque:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.Drivetrain.InternalCombustionEngine.Engine.EngReferenceTorque
+
+NominalFrictionPercentTorque:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.Drivetrain.InternalCombustionEngine.Engine.NominalFrictionPercentTorque
+    
+EngSpeed:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.Drivetrain.InternalCombustionEngine.Engine.EngSpeed
+
+EngSpeedAtIdlePoint1:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.Drivetrain.InternalCombustionEngine.Engine.EngSpeedAtIdlePoint1
+
+EngSpeedAtPoint2:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.Drivetrain.InternalCombustionEngine.Engine.EngSpeedAtPoint2
+
+BarometricPress:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.OBD.BarometricPress
+
+EngCoolantTemp:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.OBD.EngCoolantTemp
+
+EngPercentLoadAtCurrentSpeed:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.OBD.EngPercentLoadAtCurrentSpeed
+
+ProtectLampStatus:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.OBD.FaultDetectionSystem.ProtectLampStatus
+
+RedStopLampState:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.OBD.FaultDetectionSystem.RedStopLampState
+
+AmberWarningLampStatus:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.OBD.FaultDetectionSystem.AmberWarningLampStatus
+
+MalfunctionIndicatorLampStatus:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.OBD.FaultDetectionSystem.MalfunctionIndicatorLampStatus
+
+FlashAmberWarningLamp:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.OBD.FaultDetectionSystem.FlashAmberWarningLamp
+
+FlashMalfuncIndicatorLamp:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.OBD.FaultDetectionSystem.FlashMalfuncIndicatorLamp
+
+FlashProtectLamp:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.OBD.FaultDetectionSystem.FlashProtectLamp
+
+FlashRedStopLamp:
+  minupdatedelay: 100
+  targets:
+    - Vehicle.OBD.FaultDetectionSystem.FlashRedStopLamp
