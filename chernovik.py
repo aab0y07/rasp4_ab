@@ -9,7 +9,7 @@ with open('testLOG.log') as f:
     canFrames = f.readlines()
     count = 0
 
-for frame in canFrames:
+for frame in canFrames
     count +=1
     data = frame.split()[-1]
     canData.append(data)

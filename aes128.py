@@ -3,18 +3,15 @@
 from cryptography.fernet import Fernet
 
 
-key = Fernet.generate_key()
 
-with open('secret.key', 'wb') as new_key_file:
-    new_key_file.write(key)
-    
-print(key)
+hexSecKey = "2b7e151628aed2a6abf7158809cf4f3c"
 
-msg = "super_secret_key_dias"
+
+msg = "aabbccdd010000000000000000000000"
 
 msg = msg.encode()
 
-f = Fernet(key)
+f = Fernet(hexSecKey)
 ciphertext = f.encrypt(msg)
 
 print(ciphertext)
