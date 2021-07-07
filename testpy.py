@@ -13,12 +13,17 @@ cipher = "aabbccdd010000000000000000000000"
 canQueue = Queue.Queue()
     
 # Create AutosarSecOC instance
-secoc = MACgenerator.CmacAes128(key, cipher, canQueue)
+secoc = MACgenerator.CmacAes128(key,canQueue)
 secoc.start_listening()
 
-calculated_mac = secoc.generate_mac()
+
+
+
+#calculated_mac = secoc.generate_mac()
 #truncate_mac_val = secoc.truncate_mac(calculated_mac)
 #print(truncate_mac_val)
+
+
 
 
 #################### Initial Steps ########################
