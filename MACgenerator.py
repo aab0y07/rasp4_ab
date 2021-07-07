@@ -43,10 +43,7 @@ class CmacAes128:
         self.transmitted_data = []
         self.tampered_signals = []
         self.nonTampered_signals = []
-        # Opening a file
-      
-        self.file2 = open('tampered_list.log', 'w') 
-        self.file3 = open('nonTampered_list.log', 'w')
+       
         
     
     def start_listening(self):
@@ -65,8 +62,9 @@ class CmacAes128:
             can_data = msg.__str__()
             print(can_data)
             # Writing a string to file
-            file1 = open('log_data.log', 'w')
+            file1 = open('log_data.log', 'a')
             file1.write(can_data)
+            file1.write("\n")
             d = can_data[-41:-18]
             print(d)
             d= '0x ' + d
@@ -85,12 +83,19 @@ class CmacAes128:
                 print('MAC value has been verified successfully!')
                 #Assign the CAN frame to non-tampered list
                 self.nonTampered_signals.append(received_frame)
-                self.file2.write(received_frame) 
+                file2 = open('nonTampered_list.log', 'a') 
+                file2.write(received_frame)
+                file2.write("\n")
+                #Opening a file
+                
+                
             else: 
                 print('MAC value verification has failed!')
         # Retry to verify, the next attempt
                 self.tampered_signals.append(received_frame)
-                self.file3.write(received_frame)
+                file3 = open('tampered_list.log', 'a') 
+                file3.write(received_frame)
+                file3.write("\n") 
             #self.transmitted_data.append(d)
             
         
