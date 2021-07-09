@@ -42,10 +42,10 @@ class OwnCaToProduceCyclicMessages(j1939.ControllerApplication):
         :param bytearray data:
             Data of the PDU
         """
-        #print("On_message method is here")
+        print("On_message method is here")
         print("PGN {} length {}".format(pgn, len(data)))
         print(str(data))
-
+        print("End of On_message method is here")
     def timer_callback(self, cookie):
         """Callback for sending the IEC1 message
 
