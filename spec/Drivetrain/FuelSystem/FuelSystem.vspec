@@ -1,0 +1,10 @@
+
+- FuelSystem:
+  type: branch
+  description: Signals from the fuel system
+
+- FuelSystem.TimeSinceEngineStart:
+  datatype: uint16
+  type: sensor
+  unit: "l"
+  description: Time Since Engine Start

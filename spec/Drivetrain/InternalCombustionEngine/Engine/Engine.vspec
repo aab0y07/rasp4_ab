@@ -1,0 +1,40 @@
+
+- Engine:
+  type: branch
+  description: Signals from the engine
+  
+- Engine.ActualEngPercentTorque:
+  datatype: uint8
+  type: sensor
+  unit: "l"
+  description: Actual Engine Percent Torque
+  
+- Engine.EngReferenceTorque:
+  datatype: uint16
+  type: attribute
+  unit: l
+  description: Engine Reference Torque
+
+- Engine.NominalFrictionPercentTorque:
+  datatype: uint8
+  type: sensor
+  unit: "l"
+  description: Nominal Friction Percent Torque
+  
+- Engine.EngSpeed:
+  datatype: float
+  type: sensor
+  unit: l
+  description: Engine Speed
+
+- Engine.EngSpeedAtIdlePoint1:
+  datatype: float
+  type: attribute
+  unit: l
+  description: Engine Speed At Idle Point 1
+
+- Engine.EngSpeedAtPoint2:
+  datatype: float
+  type: attribute
+  unit: l
+  description: Engine Speed At High Speed Governor Kick In Point 2

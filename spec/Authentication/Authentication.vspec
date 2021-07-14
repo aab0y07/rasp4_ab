@@ -1,0 +1,214 @@
+
+- Authentication:
+  type: branch
+  description: Signal to check authentication
+  
+
+- Authentication.IsAmbientAirTempAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+  
+  
+- Authentication.IsAftrtrtmnt1SCRCtlystIntkGasTempAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description:  Authentication Flag 
+
+- Authentication.IsAftrtratment1ExhaustGasMassFlowAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag 
+  
+  
+- Authentication.IsAftertreatment1IntakeNOxAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag 
+  
+- Authentication.IsAftertreatment1OutletNOxAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Engine Speed Authentication Flag 
+  
+- Authentication.IsTimeSinceEngineStartAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag   
+
+- Authentication.IsActualEngPercentTorqueAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag   
+  
+  
+- Authentication.IsEngReferenceTorqueAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag   
+  
+- Authentication.IsNominalFrictionPercentTorqueAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+  
+  
+- Authentication.IsEngSpeedAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+
+- Authentication.IsEngSpeedAtIdlePoint1Authenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+  
+  
+- Authentication.IsEngSpeedAtPoint2Authenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+
+
+- Authentication.IsBarometricPressAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description:  Authentication Flag
+  
+  
+- Authentication.IsEngCoolantTempAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+  
+- Authentication.IsEngPercentLoadAtCurrentSpeedAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+
+  
+- Authentication.IsProtectLampStatusAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+  
+  
+- Authentication.IsRedStopLampStateAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+  
+ 
+- Authentication.IsAmberWarningLampStatusAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+ 
+ 
+- Authentication.IsMalfunctionIndicatorLampStatusAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+  
+- Authentication.IsFlashAmberWarningLampAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+  
+  
+- Authentication.IsFlashMalfuncIndicatorLampAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+  
+    
+- Authentication.IsFlashProtectLampAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+  
+- Authentication.IsFlashRedStopLampAuthenticated:
+  datatype: "int16"
+  type: attribute
+  unit: "l"
+  description: Authentication Flag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
