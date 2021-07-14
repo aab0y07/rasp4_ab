@@ -1,0 +1,18 @@
+
+- AfterTreatment:
+  type: branch
+  description: Signals from the Aftertreatment system (UreaLevel, NOx)
+  
+- AfterTreatment.Aftrtratment1ExhaustGasMassFlow:
+  datatype: float
+  type: sensor
+  unit: "l"
+  description: Aftertreatment 1 Exhaust Gas Mass Flow
+
+- AfterTreatment.Aftrtrtmnt1SCRCtlystIntkGasTemp:
+  datatype: float
+  type: sensor
+  unit: "l"
+  description: Aftertreatment 1 SCR Catalyst Intake Gas Temperature
+
+#include AfterTreatment/NOxLevel.vspec AfterTreatment

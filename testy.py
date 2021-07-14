@@ -14,7 +14,7 @@ def on_message(pgn, data):
     :param bytearray data:
         Data of the PDU
     """
-    print("PGN {} length {}".format(pgn, len(data)))
+    print("PGN {} data {}".format(pgn, data))
 
 def main():
     print("Initializing")
@@ -25,9 +25,9 @@ def main():
     # Connect to the CAN bus
     # Arguments are passed to python-can's can.interface.Bus() constructor
     # (see https://python-can.readthedocs.io/en/stable/bus.html).
-    # ecu.connect(bustype='socketcan', channel='can0')
+    ecu.connect(bustype='socketcan', channel='vcan0')
     # ecu.connect(bustype='kvaser', channel=0, bitrate=250000)
-    ecu.connect(bustype='pcan', channel='PCAN_USBBUS1', bitrate=250000)
+    #ecu.connect(bustype='pcan', channel='PCAN_USBBUS1', bitrate=250000)
     # ecu.connect(bustype='ixxat', channel=0, bitrate=250000)
     # ecu.connect(bustype='vector', app_name='CANalyzer', channel=0, bitrate=250000)
     # ecu.connect(bustype='nican', channel='CAN0', bitrate=250000)

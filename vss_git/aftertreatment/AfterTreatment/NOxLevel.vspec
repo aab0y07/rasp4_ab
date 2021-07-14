@@ -1,0 +1,16 @@
+
+- NOxLevel:
+  type: branch
+  description: Intake or outlet NOx level data from After Treatment System.
+  
+- NOxLevel.Aftertreatment1IntakeNOx:
+  datatype: float
+  type: sensor
+  unit: l
+  description: Aftertreatment 1 Intake NOx
+  
+- NOxLevel.Aftertreatment1OutletNOx:
+  datatype: float
+  type: sensor
+  unit: l
+  description: Aftertreatment 1 Outlet NOx

@@ -1,0 +1,20 @@
+
+- Vehicle:
+  type: branch
+  description: Vehicle signals
+
+- Vehicle.AmbientAirTemp:
+  datatype: float
+  type: sensor
+  unit: "celsius"
+  description: Ambient Air Temperature
+
+#include AfterTreatment/AfterTreatment.vspec Vehicle
+
+#include Authentication/Authentication.vspec Vehicle
+
+#include Drivetrain/Drivetrain.vspec Vehicle
+#include OBD/OBD.vspec Vehicle
+
+
+

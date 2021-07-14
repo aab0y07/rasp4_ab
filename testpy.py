@@ -1,7 +1,6 @@
-from Crypto.Hash import CMAC
-from Crypto.Cipher import AES
 
-import Queue
+
+import queue
 import MACgenerator
 
 # alternative to check "from cryptography.fernet import Fernet"
@@ -10,7 +9,7 @@ key = "2b7e151628aed2a6abf7158809cf4f3c"
 print(len(key))
 cipher = "aabbccdd010000000000000000000000" 
 
-canQueue = Queue.Queue()
+canQueue = queue.Queue()
     
 # Create AutosarSecOC instance
 secoc = MACgenerator.CmacAes128(key,canQueue)
